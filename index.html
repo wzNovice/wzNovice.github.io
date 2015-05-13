@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>Ultimate</title>
+<body>
+<div id="game">
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="shop.js"></script>
+<script src="jquery.js"></script>
+
+<h2>The Ultimate!</h2>
+<p>Passive Gains: </p> <p id="passiveGain">1</p>
+<p>Click Power: </p> <p id="clickPower">1</p>
+
+<button type="button" onclick="Ultimate()">Ultimate</button>
+<p id="res"></p>
+
+<h3>Shopulator-3000</h3>
+
+<button onclick='thingButton()' id="thing">Thing</button>
+<button onclick='essenceButton()' id="essence">Essence</button>
+<button onclick='Purchase()'id='purchase'>Purchase</button>
+<button onclick='Clear()' id='clear'>Clear</button>
+
+<br> <br>
+
+<button onclick="openBackpack()">Backpack</button>
+<p id="backpack"> </p>
+</div>
+<div id="test">
+<!--TEST-->
+<br> <br> <br> <br>
+<a href="http://jquery.com">jQuery</a>
+<script>
+	$(document).ready(function(){
+		$("a").click(function(event){
+			alert("Swag");
+			event.preventDefault();
+		});
+	});
+</script>
+</div>
+</body>
+</html>
